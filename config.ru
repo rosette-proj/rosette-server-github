@@ -1,7 +1,6 @@
 # This file is meant to be used for testing/development purposes only. To use
-# rosette-integration-github, most users will want to add it as an integration
-# in their Rosette config, which will mount it on their instance of
-# Rosette::Server.
+# rosette-integration-github, most users will want to add it to their instance
+# of rosette-server.
 
 require 'rosette/server/github'
 require 'rosette/test-helpers'

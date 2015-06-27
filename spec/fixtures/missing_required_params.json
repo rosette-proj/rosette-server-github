@@ -1,0 +1,39 @@
+{
+  "ref": "refs/tags/staging_release_20150529153225",
+  "before": "0000000000000000000000000000000000000000",
+  "after": "42886056abd8a983073902637e3500a2e3ca7847",
+  "created": true,
+  "deleted": false,
+  "forced": true,
+  "base_ref": "refs/heads/winner_sepa_test_reopen_2",
+  "compare": "https://github.com/lumoslabs/lumos_rails/compare/staging_release_20150529153225",
+  "commits": [
+
+  ],
+  "head_commit": {
+    "id": "42886056abd8a983073902637e3500a2e3ca7847",
+    "distinct": true,
+    "message": "add footer i18n",
+    "timestamp": "2015-05-29T15:21:59-07:00",
+    "url": "https://github.com/lumoslabs/lumos_rails/commit/42886056abd8a983073902637e3500a2e3ca7847",
+    "author": {
+      "name": "Susan Foobar",
+      "email": "sfoobar@lumoslabs.com",
+      "username": "foowinner"
+    },
+    "committer": {
+      "name": "Susan Foobar",
+      "email": "sfoobar@lumoslabs.com",
+      "username": "foowinner"
+    },
+    "added": [
+
+    ],
+    "removed": [
+
+    ],
+    "modified": [
+      "engines/shop/app/controllers/shop/billings_controller.rb"
+    ]
+  }
+}

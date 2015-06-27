@@ -1,0 +1,175 @@
+{
+  "ref": "refs/tags/staging_release_20150529153225",
+  "before": "0000000000000000000000000000000000000000",
+  "after": "42886056abd8a983073902637e3500a2e3ca7847",
+  "created": true,
+  "deleted": false,
+  "forced": true,
+  "base_ref": "refs/heads/winner_sepa_test_reopen_2",
+  "compare": "https://github.com/lumoslabs/lumos_rails/compare/staging_release_20150529153225",
+  "commits": [
+    {
+      "id": "42886056abd8a983073902637e3500a2e3ca7847",
+      "distinct": true,
+      "message": "travis update",
+      "timestamp": "2015-06-26T17:08:28-07:00",
+      "url": "https://github.com/lumoslabs/lumos_rails/commit/ad4a591b67b360ccea08c1219d51db83e0876312",
+      "author": {
+        "name": "Jackson Pollock",
+        "email": "jpollock@lumoslabs.com",
+        "username": "jpollock"
+      },
+      "committer": {
+        "name": "Jackson Pollock",
+        "email": "jpollock@lumoslabs.com",
+        "username": "jpollock"
+      },
+      "added": [
+
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+        ".travis.yml",
+        "Gemfile",
+        "Gemfile.lock"
+      ]
+    }
+  ],
+  "head_commit": {
+    "id": "42886056abd8a983073902637e3500a2e3ca7847",
+    "distinct": true,
+    "message": "add footer i18n",
+    "timestamp": "2015-05-29T15:21:59-07:00",
+    "url": "https://github.com/lumoslabs/lumos_rails/commit/42886056abd8a983073902637e3500a2e3ca7847",
+    "author": {
+      "name": "Susan Foobar",
+      "email": "sfoobar@lumoslabs.com",
+      "username": "foowinner"
+    },
+    "committer": {
+      "name": "Susan Foobar",
+      "email": "sfoobar@lumoslabs.com",
+      "username": "foowinner"
+    },
+    "added": [
+
+    ],
+    "removed": [
+
+    ],
+    "modified": [
+      "engines/shop/app/controllers/shop/billings_controller.rb"
+    ]
+  },
+  "repository": {
+    "id": 2699473,
+    "name": "lumos_rails",
+    "full_name": "lumoslabs/lumos_rails",
+    "owner": {
+      "name": "lumoslabs",
+      "email": null
+    },
+    "private": true,
+    "html_url": "https://github.com/lumoslabs/lumos_rails",
+    "description": "Lumosity.com",
+    "fork": false,
+    "url": "https://github.com/lumoslabs/lumos_rails",
+    "forks_url": "https://api.github.com/repos/lumoslabs/lumos_rails/forks",
+    "keys_url": "https://api.github.com/repos/lumoslabs/lumos_rails/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/lumoslabs/lumos_rails/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/lumoslabs/lumos_rails/teams",
+    "hooks_url": "https://api.github.com/repos/lumoslabs/lumos_rails/hooks",
+    "issue_events_url": "https://api.github.com/repos/lumoslabs/lumos_rails/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/lumoslabs/lumos_rails/events",
+    "assignees_url": "https://api.github.com/repos/lumoslabs/lumos_rails/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/lumoslabs/lumos_rails/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/lumoslabs/lumos_rails/tags",
+    "blobs_url": "https://api.github.com/repos/lumoslabs/lumos_rails/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/lumoslabs/lumos_rails/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/lumoslabs/lumos_rails/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/lumoslabs/lumos_rails/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/lumoslabs/lumos_rails/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/lumoslabs/lumos_rails/languages",
+    "stargazers_url": "https://api.github.com/repos/lumoslabs/lumos_rails/stargazers",
+    "contributors_url": "https://api.github.com/repos/lumoslabs/lumos_rails/contributors",
+    "subscribers_url": "https://api.github.com/repos/lumoslabs/lumos_rails/subscribers",
+    "subscription_url": "https://api.github.com/repos/lumoslabs/lumos_rails/subscription",
+    "commits_url": "https://api.github.com/repos/lumoslabs/lumos_rails/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/lumoslabs/lumos_rails/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/lumoslabs/lumos_rails/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/lumoslabs/lumos_rails/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/lumoslabs/lumos_rails/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/lumoslabs/lumos_rails/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/lumoslabs/lumos_rails/merges",
+    "archive_url": "https://api.github.com/repos/lumoslabs/lumos_rails/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/lumoslabs/lumos_rails/downloads",
+    "issues_url": "https://api.github.com/repos/lumoslabs/lumos_rails/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/lumoslabs/lumos_rails/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/lumoslabs/lumos_rails/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/lumoslabs/lumos_rails/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/lumoslabs/lumos_rails/labels{/name}",
+    "releases_url": "https://api.github.com/repos/lumoslabs/lumos_rails/releases{/id}",
+    "created_at": 1320285539,
+    "updated_at": "2015-05-08T16:54:57Z",
+    "pushed_at": 1432938746,
+    "git_url": "git://github.com/lumoslabs/lumos_rails.git",
+    "ssh_url": "git@github.com:lumoslabs/lumos_rails.git",
+    "clone_url": "https://github.com/lumoslabs/lumos_rails.git",
+    "svn_url": "https://github.com/lumoslabs/lumos_rails",
+    "homepage": "http://www.lumosity.com",
+    "size": 483141,
+    "stargazers_count": 4,
+    "watchers_count": 4,
+    "language": "Ruby",
+    "has_issues": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "forks_count": 6,
+    "mirror_url": null,
+    "open_issues_count": 34,
+    "forks": 6,
+    "open_issues": 34,
+    "watchers": 4,
+    "default_branch": "master",
+    "stargazers": 4,
+    "master_branch": "master",
+    "organization": "lumoslabs"
+  },
+  "pusher": {
+    "name": "pusher",
+    "email": "pusher@lumoslabs.com"
+  },
+  "organization": {
+    "login": "lumoslabs",
+    "id": 723646,
+    "url": "https://api.github.com/orgs/lumoslabs",
+    "repos_url": "https://api.github.com/orgs/lumoslabs/repos",
+    "events_url": "https://api.github.com/orgs/lumoslabs/events",
+    "members_url": "https://api.github.com/orgs/lumoslabs/members{/member}",
+    "public_members_url": "https://api.github.com/orgs/lumoslabs/public_members{/member}",
+    "avatar_url": "https://avatars.githubusercontent.com/u/723646?v=3",
+    "description": null
+  },
+  "sender": {
+    "login": "lumos-deploy-server",
+    "id": 1197767,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1197767?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lumos-deploy-server",
+    "html_url": "https://github.com/lumos-deploy-server",
+    "followers_url": "https://api.github.com/users/lumos-deploy-server/followers",
+    "following_url": "https://api.github.com/users/lumos-deploy-server/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lumos-deploy-server/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lumos-deploy-server/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lumos-deploy-server/subscriptions",
+    "organizations_url": "https://api.github.com/users/lumos-deploy-server/orgs",
+    "repos_url": "https://api.github.com/users/lumos-deploy-server/repos",
+    "events_url": "https://api.github.com/users/lumos-deploy-server/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lumos-deploy-server/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}

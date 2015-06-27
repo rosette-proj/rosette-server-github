@@ -4,6 +4,7 @@ require 'grape'
 require 'json'
 require 'openssl'
 require 'rosette/core'
+require 'rosette/queuing'
 require 'set'
 
 module Rosette

@@ -3,23 +3,15 @@
 # in their Rosette config, which will mount it on their instance of
 # Rosette::Server.
 
-require 'rosette/data_stores'
-require 'rosette/integrations/github_integration'
-require 'rosette/queuing'
-require 'rosette/server'
+require 'rosette/server/github'
 require 'rosette/test-helpers'
 
-app_class = Rosette::Integrations::GithubIntegration::Application
-
-Rosette::Server::V1.set_configuration(
-  Rosette.build_config do |config|
-    config.use_queue('test')
-  end
-)
-
-integration = Rosette::Integrations::GithubIntegration.configure do |configurator|
-  configurator.set_github_webhook_secret(ENV['GITHUB_WEBHOOK_SECRET'])
+rosette_config = Rosette.build_config do |config|
+  config.use_queue('test')
 end
 
-app_class.integration_config = integration.configuration
-run app_class
+server = Rosette::Server::Github.new(rosette_config, {
+  github_webhook_secret: ENV['GITHUB_WEBHOOK_SECRET']
+})
+
+run server

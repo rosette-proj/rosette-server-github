@@ -2,7 +2,7 @@ $:.unshift File.join(File.dirname(__FILE__), 'lib')
 require 'rosette/server/github/version'
 
 Gem::Specification.new do |s|
-  s.name     = 'rosette-integration-github'
+  s.name     = 'rosette-server-github'
   s.version  = ::Rosette::Server::GITHUB_VERSION
   s.authors  = ['Cameron Dutro']
   s.email    = ['camertron@gmail.com']

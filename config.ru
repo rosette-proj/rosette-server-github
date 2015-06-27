@@ -1,5 +1,5 @@
 # This file is meant to be used for testing/development purposes only. To use
-# rosette-integration-github, most users will want to add it to their instance
+# rosette-server-github, most users will want to add it to their instance
 # of rosette-server.
 
 require 'rosette/server/github'

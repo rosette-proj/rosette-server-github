@@ -30,7 +30,7 @@ module Rosette
         @rosette_config = _rosette_config
         @github_webhook_secret = options.fetch(:github_webhook_secret)
 
-        if !@github_webhook_secret || @github_webhook_secret.blank?
+        if @github_webhook_secret.nil? || @github_webhook_secret.blank?
           raise 'github_webhook_secret was nil or blank, which is not allowed'
         end
 

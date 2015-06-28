@@ -42,8 +42,8 @@ describe Github do
     end
   end
 
-  describe 'POST /github/push.json' do
-    let(:endpoint) { '/github/push.json' }
+  describe 'POST /push.json' do
+    let(:endpoint) { '/push.json' }
     let(:response) { JSON.parse(last_response.body) }
     let(:status) { last_response.status }
     let(:body) { File.read(File.join(fixture_dir, 'push_request.json')) }

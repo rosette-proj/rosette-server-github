@@ -154,29 +154,27 @@ module Rosette
         end
       end
 
-      namespace :github do
-        post :push do
-          begin
-            check_signature
-            check_push_parameters
-            check_queue
+      post :push do
+        begin
+          check_signature
+          check_push_parameters
+          check_queue
 
-            status_code, result = do_push
-            status status_code
-            result
-          rescue Exception => e
-            # rescue Exception here to capture both Ruby and Java errors
-            # (rescue => e isn't enough, apparently)
-            status_code = SERVER_ERROR_STATUS
+          status_code, result = do_push
+          status status_code
+          result
+        rescue Exception => e
+          # rescue Exception here to capture both Ruby and Java errors
+          # (rescue => e isn't enough, apparently)
+          status_code = SERVER_ERROR_STATUS
 
-            result = {
-              errors: [
-                { status: status_code, title: e.message, detail: e.backtrace }
-              ]
-            }
+          result = {
+            errors: [
+              { status: status_code, title: e.message, detail: e.backtrace }
+            ]
+          }
 
-            error!(result, status)
-          end
+          error!(result, status)
         end
       end
     end

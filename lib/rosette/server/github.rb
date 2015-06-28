@@ -30,6 +30,10 @@ module Rosette
         @rosette_config = _rosette_config
         @github_webhook_secret = options.fetch(:github_webhook_secret)
 
+        if !@github_webhook_secret || @github_webhook_secret.blank?
+          raise 'github_webhook_secret was nil or blank, which is not allowed'
+        end
+
         self.class.helpers do
           define_method(:github_webhook_secret) do
             options.fetch(:github_webhook_secret)
@@ -54,16 +58,8 @@ module Rosette
           gather_commits.each do |commit_id|
             conductor.enqueue(commit_id)
           end
-        rescue => e
-          status_code = SERVER_ERROR_STATUS
 
-          result = {
-            errors: [
-              { status: status_code, title: e.message, detail: e.backtrace }
-            ]
-          }
-        ensure
-          return status_code, result
+          [status_code, result]
         end
 
         def check_signature
@@ -160,13 +156,27 @@ module Rosette
 
       namespace :github do
         post :push do
-          check_signature
-          check_push_parameters
-          check_queue
+          begin
+            check_signature
+            check_push_parameters
+            check_queue
 
-          status_code, result = do_push
-          status status_code
-          result
+            status_code, result = do_push
+            status status_code
+            result
+          rescue Exception => e
+            # rescue Exception here to capture both Ruby and Java errors
+            # (rescue => e isn't enough, apparently)
+            status_code = SERVER_ERROR_STATUS
+
+            result = {
+              errors: [
+                { status: status_code, title: e.message, detail: e.backtrace }
+              ]
+            }
+
+            error!(result, status)
+          end
         end
       end
     end

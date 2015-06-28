@@ -32,6 +32,16 @@ describe Github do
     server
   end
 
+  describe '#initialize' do
+    it 'raises an error on initialize if the secret is blank' do
+      expect do
+        Rosette::Server::Github.new(rosette_config, github_webhook_secret: nil)
+      end.to raise_error(
+        /github_webhook_secret was nil or blank/
+      )
+    end
+  end
+
   describe 'POST /github/push.json' do
     let(:endpoint) { '/github/push.json' }
     let(:response) { JSON.parse(last_response.body) }

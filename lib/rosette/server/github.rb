@@ -174,6 +174,7 @@ module Rosette
             ]
           }
 
+          status status_code
           error!(result, status)
         end
       end

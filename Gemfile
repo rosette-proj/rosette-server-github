@@ -8,6 +8,7 @@ gem 'rosette-core', github: 'rosette-proj/rosette-core'
 gem 'rosette-server', github: 'rosette-proj/rosette-server'
 
 group :development, :test do
+  gem 'expert', '~> 1.0.0'
   gem 'rosette-test-helpers', github: 'rosette-proj/rosette-test-helpers'
   gem 'pry-nav'
   gem 'rake'

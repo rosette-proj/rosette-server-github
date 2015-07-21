@@ -1,5 +1,8 @@
 # encoding: UTF-8
 
+require 'expert'
+Expert.environment.require_all
+
 require 'pry-nav'
 require 'rack/test'
 require 'rosette/server/github'

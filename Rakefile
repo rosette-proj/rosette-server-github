@@ -2,6 +2,9 @@
 
 require 'rubygems' unless ENV['NO_RUBYGEMS']
 
+require 'expert'
+Expert.environment.require_all
+
 require 'bundler'
 require 'rspec/core/rake_task'
 require 'rubygems/package_task'

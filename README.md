@@ -47,7 +47,6 @@ run builder.to_app
 ```
 
 You can then add a "push" hook to your repo's settings in Github that sends requests to http://your-website.com/github/push.json.
-```
 
 ## Requirements
 

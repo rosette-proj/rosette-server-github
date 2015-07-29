@@ -16,5 +16,5 @@ Gem::Specification.new do |s|
   s.add_dependency 'grape', '~> 0.9.0'
 
   s.require_path = 'lib'
-  s.files = Dir["{lib,spec}/**/*", "Gemfile", "History.txt", "README.md", "Rakefile", "rosette-server-github.gemspec"]
+  s.files = Dir["{lib,spec}/**/*", 'Gemfile', 'History.txt', 'README.md', 'Rakefile', 'rosette-server-github.gemspec']
 end

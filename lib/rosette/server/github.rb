@@ -112,7 +112,7 @@ module Rosette
 
         def gather_commits
           Set.new(commits.map { |c| c['id'] }).tap do |set|
-            if params.include?('head_commit')
+            if params['head_commit'].present?
               set << params['head_commit']['id']
             end
           end

@@ -127,6 +127,17 @@ describe Github do
           )
         end
       end
+
+      context 'missing a head commit' do
+        let(:body) do
+          File.read(File.join(fixture_dir, 'missing_head_commit.json'))
+        end
+
+        it 'responds with an accepted status' do
+          post endpoint, body
+          expect(status).to eq(202)
+        end
+      end
     end
   end
 end
